@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    background-image: url(./assets/images/pexels-cottonbro-7319470.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 20px;
+}
+h1{
+    font-size: 4rem;
+    font-family: serif;
+}
+h2{
+    font-size: 2rem;
+    font-family:serif;
+    font-weight: 200;
+}
+p{
+    font-family: serif;
+}
+.titleimg {
+    width: 260px;
+}
+.hero{
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero > img {
+    left: -2px;
+    width: 250px;
+    transform: rotateX(180deg);
+}
+.b-example-divider{
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.card{
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+.features > div > h2 {
+    text-align: center;
+}
+footer{
+    background: linear-gradient(-45deg, #000000, #131313, #303030);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 50vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@media (max-width:700px){
+    footer{
+        height: 30vh;
+    }
+}
+@media (max-width:644px){
+    .title{
+        padding-left: 20px;
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+}
+@media (max-width:596px){
+    .titleimg{
+        width: 130px;
+    }
+}
+@media (max-width:430px){
+    #thish{
+        font-size: 1.5rem;
+    }
+}
